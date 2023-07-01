@@ -13,4 +13,4 @@ jobs:
         -name: multiline script
             run: |
             node -v
-            pwdgit add
+            pwd
