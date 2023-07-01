@@ -3,14 +3,14 @@ name: shell commands
 on: [push]
 
 jobs:
-    run-shell-commands
+    run-shell-commands:
     runs-on: ubuntu-latest
     steps:
         -name: checkout
             uses: actions/checkout@v3
-        -name: update
-            uses: sudo apt update
+        -name: echo string
+            run: echo "Hello"
         -name: multiline script
             run: |
             node -v
-            pwd
+            pwdgit add
